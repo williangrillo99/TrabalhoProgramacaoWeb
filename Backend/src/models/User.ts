@@ -1,25 +1,16 @@
-import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
-import { v4 as uuid } from "uuid";
+import {Document, model, Schema} from "mongoose";
 
-@Entity("users")
-class User {
-  @PrimaryColumn()
-  readonly id: string;
-
-  @Column()
-  name: string;
-
-  @Column()
-  email: string;
-
-  @CreateDateColumn()
-  created_at: Date;
-
-  constructor() {
-    if (!this.id) {
-      this.id = uuid();
-    }
-  }
+// Defino a interface do usuário
+interface IUser extends Document {
+    name: string;
+    email: string;
+    password: string;
 }
 
-export { User };
+const schema = new Schema({
+    name: String,
+    email: String,
+    password: String
+});
+
+export const users = model<IUser>("users", schema);
