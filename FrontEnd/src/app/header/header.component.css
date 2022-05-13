@@ -1,0 +1,15 @@
+.nav{
+  height: 50px;
+  background: rgb(152, 152, 223);
+  display: flex;
+}
+a{
+  color: white;
+}
+.links{
+}
+.link{
+  display: flex;
+
+}
+
