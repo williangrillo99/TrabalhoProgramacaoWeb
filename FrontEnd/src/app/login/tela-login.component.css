@@ -1,66 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300&display=swap');
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 
-*{
- margin: 0;
- border: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: "Poppins", sans-serif;
 }
-h2{
+
+p {
+  font-style: initial;
   font-size: 16pt;
-  padding: 2.4rem 0 1rem
+  padding: 2.4rem 0 1rem;
+  margin: 20px
 }
-.toolbarlogin{
+
+.toolbarlogin {
   text-align: center;
 }
-body{
-  background: #0a79d1;
-  background-repeat: no-repeat;
 
-  min-height: 100vh; /*altura minima da pagina*/
-  min-width: 100vw; /*largura minima da pagina*/
+.teste {
+  background: #0a78d1;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  /*altura minima da pagina*/
+  width: 100%;
+  /*largura minima da pagina*/
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
-main.bloco{
+
+main.bloco {
+  margin-top: 20px;
   background: white;
-  max-width: 450px;
-  min-height: 55vh;
+  min-width: 480px;
+  min-height: 90vh;
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
 }
-.form-group{
-  padding: 1rem 4rem 0;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
+
+.form-group {
+  padding: 1rem 2rem;
   flex-direction: row;
 
+}
+
+input {
+  width: 100%;
+  margin-top: 30px;
+}
+input::placeholder{
+  font-size: 16px;
 
 }
-.input-field{
+
+.input-field {
   padding: 2px 2px 26px;
+  width: 100%;
 }
-.inputs{
-  padding: 5% 0%;
-}
-.inputs{
-  background: transparent;
+
+.inputs {
+  background: none;
   border-bottom: 1px solid #ccc;
 }
+
 
 .inputs:focus {
   outline: none;
+
 }
 
-.inputs{
-  padding: 5% 0%;
-  border-bottom: 1px solid #ccc;
-}
-#continue{
+button {
   background-color: white;
   color: #0a79d1;
   border: 1px solid #0a79d1;
@@ -71,12 +84,15 @@ main.bloco{
   margin-top: 25px;
 
 }
-#continue:hover{
+
+button:hover {
   background: #0a79d1;
   color: white;
 }
-.footer{
+
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }

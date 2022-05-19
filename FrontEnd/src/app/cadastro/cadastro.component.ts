@@ -1,3 +1,4 @@
+import { FormGroup, FormBuilder, FormControl, FormArray, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cadastro.component.html',
   styleUrls: ['./cadastro.component.css']
 })
-export class CadastroComponent implements OnInit {
+export class CadastroComponent implements OnInit{
+  cor: number;
+  form = new FormGroup({
+    nome: new FormControl('', Validators.required),
+    sobrenome: new FormControl('', Validators.required),
+    teste: new FormControl({value: '', disabled: true }),
+  })
+  ngOnInit(): void {
 
-  constructor() { }
-
-  ngOnInit() {
   }
 
+  SalvarInf(){
+  if(this.form.valid){
+    console.log(this.form.value);
+    
+  }
+
+  }
 }

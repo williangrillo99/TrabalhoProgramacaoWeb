@@ -1,5 +1,25 @@
-.corpo{
-  padding-top: 10px;
+.container{
+  background: #0a78d1;
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+.bloco{
+  background: white;
+  height: 100%;
+  width: 80%;
+}
+.card{
+  margin-top: 20px;
+  padding: 10%;
+  background: #cccc;
+  height: 10px;
+  display: flex;
+
+
+}
+.autor{
+
+
 }

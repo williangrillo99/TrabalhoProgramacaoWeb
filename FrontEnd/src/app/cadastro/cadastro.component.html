@@ -1,13 +1,15 @@
-<form>
-  <label>Digite seu nome</label>
-  <input type="text">
+<form [formGroup]="form" (ngSubmit)="SalvarInf()">
 
-  <label>Digite email</label>
-  <input type="text">
+  <label>Digite nome</label>
+  <input formControlName="nome" type="text">
 
-  <label>Digite hssssha senha</label>
-  <input type="text">
+  <label>Digitesobrenome</label>
+  <input  formControlName="sobrenome" type="text">
   <br>
+
+  <label>teste</label>
+  <input  formControlName="teste" type="text">
+
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 

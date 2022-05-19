@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TelaLoginComponent } from './login/tela-login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { MensagemComponent } from './lista-mensagem/mensagem.component';
 import { CadastrarMensagemComponent } from './cadastrar-mensagem/cadastrar-mensagem.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [	
-    AppComponent,
+  declarations: [
+      AppComponent,
       TelaLoginComponent,
       CadastroComponent,
       MensagemComponent,
@@ -21,8 +21,11 @@ import { CadastrarMensagemComponent } from './cadastrar-mensagem/cadastrar-mensa
    ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    ReactiveFormsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
